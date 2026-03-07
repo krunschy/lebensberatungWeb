@@ -23,7 +23,12 @@
         Psychosoziale Beratung
     </span>
 </h1>
-					<p>Lebensberatung | Paarberatung | Kinder- und Jugendberatung | Kunstgestützte Beratung | Trauerbegleitung</p>
+					<p class="services-list">
+    <span>Lebensberatung</span> <span class="divider">|</span>
+    <span>Paarberatung</span> <span class="divider">|</span>
+    <span>Kinder- und Jugendberatung</span> <span class="divider">|</span>
+    <span>Trauerbegleitung</span>
+</p>
 				</header>
 				<div class="container">
 					<a href="#one" class="goto-next scrolly">Next</a>
@@ -61,7 +66,7 @@
 						<header class="major">
 							<h2>Beratungsangebot</h2>
 						</header>
-						<p>Ich verrechne €20 pro Einzelheit und €40 pro Doppeleinheit.</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;€25 pro Einzelheit&nbsp;&nbsp;|&nbsp;&nbsp;€40 pro Doppeleinheit</p>
 						<ul class="icons-grid">
 							<li>
 								<span class="icon solid major fa-leaf"></span>
@@ -111,13 +116,19 @@
 
 							</div>
 						</form>
-											<footer>
-						<ul class="copyright">
-							<li>&copy; Martina Berghöfer</li>
-							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							<li>Bilder: <a href="https://www.instagram.com/dastudillophoto/">Daniel Astudillo</a></li>
-						</ul>
-					</footer>
+						<footer>
+							<ul class="copyright desktop-only">
+								<li>Design:<br><a href="http://html5up.net">HTML5 UP</a></li>                          
+								<li>Martina Berghöfer,<br>Psychosoziale Beraterin in Ausbildung</li>
+								<li>Bilder:<br><a href="https://www.instagram.com/dastudillophoto/">Daniel Astudillo</a></li>
+							</ul>
+
+							<ul class="copyright mobile-only">
+								<li class="highlight">Martina Berghöfer,<br>Psychosoziale Beraterin in Ausbildung</li>
+								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>Bilder: <a href="https://www.instagram.com/dastudillophoto/">Daniel Astudillo</a></li>
+							</ul>
+						</footer>
 					</div>
 				</div>
 			</section>
@@ -484,7 +495,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					// Honeypot Prüfung
 					const honeypot = document.getElementById("honeypot").value;
 					if (honeypot.length > 0) {
-						showStatus("Nachricht gesendet! Vielen Dank!", "#6f7577");
+						showStatus("Nachricht gesendet! Vielen Dank!", "#bf9b62");
 						form.reset();
 						return;
 					}
@@ -500,7 +511,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						headers: { 'Accept': 'application/json' }
 					}).then(response => {
 						if (response.ok) {
-							showStatus("Nachricht gesendet! Ich melde mich so schnell wie möglich.", "#28a745"); // Grünlich
+							showStatus("Nachricht gesendet! Ich melde mich so schnell wie möglich.", "#bf9b62"); // Grünlich
 							form.reset();
 							button.value = "Abschicken";
 						} else {
